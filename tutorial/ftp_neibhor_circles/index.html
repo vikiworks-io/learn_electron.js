@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>[ Demo ]</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+    .c_button{
+        margin-top: 240px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+
+    } 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div style="text-align:center;">
+	<button type="button" class="btn btn-warning c_button" onclick="file_function()">Open & Send</button>
+    </div>
+    </div>
+    <script>
+   
+    const electron = require('electron').remote
+    const dialog = electron.dialog
+
+    function file_function(){
+        path = dialog.showOpenDialog({buttonLabel: 'Send',  properties: ['openFile', 'openDirectory', 'multiSelections'] });
+        msg = "You have selected : "+path
+        alert(msg);
+    }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>learn electron.js [ vikiworks.io ]</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container"> 
+	<br>
+	<h5> Serial Reader </h5>
+
+	<div class="form-group">
+	<div class="row" style="padding-top:10px;padding-bottom:5px;">
+	<div class="col">
+		<select class="form-control" style="wordwrap" id="select_serial_ports">
+		<!-- Content populated from action.js-->
+		</select>
+	</div>
+	<div class="col">
+		<button type="button" class="btn btn-primary" onclick="event_sp_refresh()">Refresh Ports</button>
+	</div>
+	</div>
+
+	<div class="row" style="padding-top:5px;padding-bottom:10px;">
+		<div class="col">
+		<button type="button" class="btn btn-primary" onclick="event_sp_connect()">Connect</button>
+		<button type="button" class="btn btn-primary" onclick="event_sp_disconnect()">Disconnect</button>
+		</div>
+	</div>
+
+	<div>
+		<textarea class="form-control rounded-0" id="serial_monitor_data_area" rows="10" disabled=true></textarea>
+	</div>
+
+	</div>
+	</div>
+	<script>
+	window.$ = window.jQuery = require('jquery');
+	require('./node_modules/jquery/dist/jquery.min.js');
+	require('./node_modules/bootstrap/dist/js/bootstrap.min.js');
+	</script>
+	<script src="./action.js"></script>
+	
+  </body>
+</html>
+

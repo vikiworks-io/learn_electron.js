@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.8",
+    "bootstrap": "^4.0.0-beta.3"
+  },
+  "dependencies": {
+    "babylonjs": "^3.3.0",
+    "child_process": "^1.0.2",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "socket.io": "^2.2.0",
+    "three": "^0.102.1"
+  }
+}

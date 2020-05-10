@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>[ DEMO ]</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            border: 0;
+            /* DISABLE SCROLL BARS */
+            overflow: hidden;
+            /* REMOVE FLOATING CONTENT ON SIDES*/
+            display: block;  
+        }
+        .btn-block {
+            display: block;
+            min-width: 300px;
+        }
+        .lbl{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #666633;
+            color: white;
+            text-align: center;
+
+
+        }
+    </style>
+  </head>
+  <body style="background-color:#FFFFFF">
+   
+    <div class="container">
+    <!--<canvas id='canvas' style='position:absolute; left:0px; top:0px;'>
+    </canvas>
+    -->
+    <span class="lbl">Neighbor Device List</span>
+    <p></p>
+    <div class="btn-group-vertical" id="neighbor_list">
+    </div>
+
+    <script src="./list_ip_address.js"> 
+    </script>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Chat</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+    </style>
+  </head>
+<body style="background-color:#40B1E5;" onload="main()">
+	<script src="./websocket_client.js">
+	</script>
+    <div class="container">
+            <div style="color:white;text-align: center;"> <h3>SIMPLE CHAT</h3></div>
+            <input id="username" type="text" placeholder="Choose Any Username"> 
+        
+        <p></p>
+        <div style="background-color:white; overflow-y: scroll; height:245px; width:100%;">
+        <div id="message_output">
+        </div>
+        <div id="typing_status">
+        </div>
+        </div>
+    <p></p>
+	<textarea class="form-control rounded-0" wrap="hard" id="message_input" rows="3"></textarea>
+    <p></p>
+    <div style="color:white; float:right">
+    <button id="button_send" type="button" class="btn btn-warning" onclick="button_click_action()">Send</button>
+	</div>
+	</div>
+</body>
+</html>
+

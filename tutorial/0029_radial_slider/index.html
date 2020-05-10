@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+
+    <!-- Insert the following line before script import  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- include libraries(jQuery, bootstrap) -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> 
+    <link href="css/roundslider.min.css" rel="stylesheet" />
+                                    
+    <script src="js/roundslider.min.js"></script>
+
+    <!-- Insert the following line after script import  -->
+    <script>if (window.module) module = window.module;</script>
+    <style>
+    .orange_slider .rs-range-color  {
+        background-color: #ff8d00;
+    }
+    .orange_slider .rs-handle:after  {
+        background-color: #000000;
+    }
+    .orange_slider .rs-border  {
+        border-color: #ff8d00;
+    }
+
+    .gradient_slider_grey .rs-range-color  {
+         background: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 1) 0%, rgba(48, 7, 36, 1) 34%, rgba(255, 255, 255, 1) 66%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .gradient_slider_grey .rs-path-color  {
+        background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 1) 0%, rgba(169, 173, 174, 1) 34%, rgba(255, 255, 255, 1) 66%, rgba(5, 0, 0, 1) 100%);
+    }
+
+    .gradient_slider_grey .rs-handle  {
+        background: radial-gradient(ellipse at center, rgba(228, 228, 228, 1) 0%, rgba(179, 179, 179, 1) 34%, rgb(102, 91, 98) 100%);
+    }
+    .gradient_slider_grey .rs-border  {
+        border-color: white;
+    }
+
+    .gradient_slider_green .rs-range-color  {
+         background: radial-gradient(ellipse at bottom, rgba(162, 184, 72, 1) 0%, rgba(179, 207, 66, 1) 34%, rgba(179, 207, 66, 1) 66%, rgba(179, 207, 66, 1) 100%);
+    }
+
+    .gradient_slider_green .rs-path-color  {
+        background: radial-gradient(ellipse at bottom, rgba(179, 207, 66, 1) 0%, rgba(162, 184, 72, 1) 34%, rgba(255, 255, 255, 1) 66%, rgba(5, 0, 0, 1) 100%);
+    }
+
+    .gradient_slider_green .rs-handle  {
+        background: radial-gradient(ellipse at center, rgba(179, 207, 66, 1) 0%, rgba(162, 184, 72, 1) 34%, rgb(179, 207, 66) 100%);
+    }
+    .gradient_slider_green .rs-border  {
+        border-color: white;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+	<div class="container">
+        <div id="slider1"></div>
+        &nbsp
+        <div id="slider2" class="orange_slider"></div>
+        &nbsp
+        <div id="slider3" class="gradient_slider_green"></div>
+        &nbsp
+     </div>
+
+
+    <script type="text/javascript">
+        $("#slider1").roundSlider({
+            radius: 85,
+            sliderType: "min-range",
+            value: 8
+        });
+
+        $("#slider2").roundSlider({
+            radius: 80,
+            width: 14,
+            handleSize: "+8",
+            handleShape: "dot",
+            sliderType: "min-range",
+            value: 40
+        });
+
+        $("#slider3").roundSlider({
+            radius: 80,
+            width: 22,
+            handleSize: "+0",
+            sliderType: "min-range",
+            value: 91
+        });
+
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>learn electron.js [ vikiworks.io ]</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container"> 
+
+	<br>	<br>	<br>
+	<h2> Dropdown </h2>
+	<br>
+
+	<div class="form-group">
+    <select class="form-control" id="select_serial_ports" onchange="event_select_serial_port()">
+	<!-- Content populated from action.js-->
+	</select>
+
+	</div>
+	</div>
+	<script>
+	window.$ = window.jQuery = require('jquery');
+	require('./node_modules/jquery/dist/jquery.min.js');
+	require('./node_modules/bootstrap/dist/js/bootstrap.min.js');
+	</script>
+	<script src='./action.js'>
+	</script>
+
+  </body>
+</html>
+
