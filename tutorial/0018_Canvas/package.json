@@ -15,6 +15,6 @@
   "dependencies": {
     "babylonjs": "^3.3.0",
     "child_process": "^1.0.2",
-    "three": "^0.102.1"
+    "three": "^0.125.0"
   }
 }
